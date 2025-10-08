@@ -4,6 +4,7 @@ import Footer from "./components/Layout/Footer";
 import PropertyPage from "./Pages/Propertypage";
 import BookProperty from "./Pages/BookProperty";
 import Upcoming from "./Pages/Upcoming";
+import PropertyDetails from "./Pages/PropertyDetails";
 
 function App() {
   return (
@@ -18,9 +19,15 @@ function App() {
             <Route path="/services" element={<h1 className="p-6">Services</h1>} />
             <Route path="/properties" element={<PropertyPage />} />
             
-            <Route path="/book-property/:id" element={<BookProperty />} />
-             <Route path="/upcoming" element={<Upcoming />} />
            
+             <Route path="/upcoming" element={<Upcoming />} />
+          <Route path="/book-property/:id" element={<BookProperty />}
+          />
+          <Route path="/property/:id" element={<PropertyDetails />} />
+        
+          
+           
+      
            
       
           </Routes>
